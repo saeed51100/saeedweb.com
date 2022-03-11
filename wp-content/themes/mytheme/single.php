@@ -10,7 +10,7 @@
                     <?php while (have_posts()) :
                         the_post(); ?>
 
-                        <div class="bg-light m-3 rounded shadow">
+                        <div class="bg-light p-3 my-3 rounded shadow">
                             <section class="title-bar rounded-top">
                                 <div class="container">
                                     <h1><?php the_title(); ?></h1>
@@ -60,7 +60,7 @@
                                 </div>
                             </section>
                         </div>
-                        <div class="comments bg-light m-3 rounded shadow">
+                        <div class="comments bg-light  rounded shadow">
                             <h2>Tags</h2>
 
 
@@ -88,12 +88,9 @@
 
 
                         </div>
-                        <br>
-                        <br>
-                        <div class="bg-light m-3 rounded shadow">
+                        <div class="bg-light  rounded shadow">
                             <?php comments_template(); ?>
                         </div>
-
 
                     <?php endwhile; ?>
                 <?php endif; ?>
