@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-
-    <div class="row container bg-info" style="margin-top: 58px">
+<div class="container">
+    <div class="container row bg-info" style="margin-top: 58px">
 
         <?php get_template_part('sidebarloop'); ?>
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 <!--bg-light--> bg-warning">
@@ -8,10 +8,10 @@
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
                     <!--
-					saeed:  keep two side-by-side div elements
-					with same height using d-flex.
-					 http://jsfiddle.net/4dgaurav/hF72b/1/
-					-->
+                    saeed:  keep two side-by-side div elements
+                    with same height using d-flex.
+                     http://jsfiddle.net/4dgaurav/hF72b/1/
+                    -->
                     <div class="bg-light m-3 rounded shadow p-3">
                         <article class="d-flex post">
                             <div class="container col-md-9">
@@ -66,8 +66,8 @@
 
 
                 <!--
-				https://fellowtuts.com/bootstrap/wordpress-pagination-bootstrap-4-style/
-				-->
+                https://fellowtuts.com/bootstrap/wordpress-pagination-bootstrap-4-style/
+                -->
                 <div class="container justify-content-center pull-left" style="direction: ltr">
                     <?php
                     if (function_exists("fellowtuts_wpbs_pagination")) {
@@ -84,5 +84,5 @@
         </main>
 
     </div>
-
+</div>
 <?php get_footer(); ?>
