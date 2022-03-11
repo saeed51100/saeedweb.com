@@ -13,7 +13,7 @@
                         the_post(); ?>
 
                         <div class="bg-light m-3 rounded shadow">
-                            <section class="title-bar">
+                            <section class="title-bar rounded-top">
                                 <div class="container">
                                     <h1><?php the_title(); ?></h1>
                                 </div>
