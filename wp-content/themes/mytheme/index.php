@@ -14,7 +14,7 @@
 					with same height using d-flex.
 					 http://jsfiddle.net/4dgaurav/hF72b/1/
 					-->
-                    <div class="bg-light m-3 rounded shadow">
+                    <div class="bg-light m-3 rounded shadow p-3">
                         <article class="d-flex post">
                             <div class="container col-md-9">
                                 <ul class="meta">

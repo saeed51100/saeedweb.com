@@ -138,10 +138,10 @@ article.post img {
 }
 
 article.post {
-    border-bottom: 1px #ccc solid;
-    overflow: auto;
-    padding-bottom: 30px;
-    margin-bottom: 40px;
+    /*border-bottom: 1px #ccc solid;*/
+    /*overflow: auto;*/
+    /*padding-bottom: 30px;*/
+    /*margin-bottom: 40px;*/
 }
 
 
