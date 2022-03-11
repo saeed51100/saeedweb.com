@@ -12,6 +12,7 @@
                     <?php while (have_posts()) :
                         the_post(); ?>
 
+
                         <section class="row title-bar">
                             <div class="container">
                                 <div class="col-md-12">
