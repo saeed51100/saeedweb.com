@@ -62,35 +62,33 @@
                                 </div>
                             </section>
                         </div>
-                        <div class="bg-light m-3 rounded shadow">
-                            <div class="comments">
-                                <h2>Tags</h2>
+                        <div class="comments bg-light m-3 rounded shadow">
+                            <h2>Tags</h2>
 
 
+                            <?php
+                            if (has_tag()) {
+                                $tags = get_the_tags();
+                                foreach ($tags as $tag) :
+                                    $tag_link = get_tag_link($tag->term_id);
+                                    ?>
+                                    <div style="display: inline;">
+                                        <button type="button" class="btn btn-secondary my-1 p-1">
+                                            <a href="<?php echo $tag_link; ?>" title="<?php echo $tag->name; ?>"
+                                               class="m-0  <?php echo $tag->slug ?>"
+                                               style="text-decoration: none"><?php echo $tag->name ?></a>
+                                        </button>
+                                    </div>
                                 <?php
-                                if (has_tag()) {
-                                    $tags = get_the_tags();
-                                    foreach ($tags as $tag) :
-                                        $tag_link = get_tag_link($tag->term_id);
-                                        ?>
-                                        <div style="display: inline;">
-                                            <button type="button" class="btn btn-secondary my-1 p-1">
-                                                <a href="<?php echo $tag_link; ?>" title="<?php echo $tag->name; ?>"
-                                                   class="m-0  <?php echo $tag->slug ?>"
-                                                   style="text-decoration: none"><?php echo $tag->name ?></a>
-                                            </button>
-                                        </div>
-                                    <?php
-                                    endforeach;
-                                }
-                                ?>
+                                endforeach;
+                            }
+                            ?>
 
 
-                                <br>
-                                <br>
+                            <br>
+                            <br>
 
 
-                            </div>
                         </div>
                         <br>
                         <br>
