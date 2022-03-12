@@ -28,7 +28,7 @@
 <!--<body>-->
 <body <?php body_class(); ?>>
 
-<header class="container navbar navbar-expand-md navbar-dark bg-danger fixed-top shadow">
+<header class="navbar navbar-expand-md navbar-dark bg-danger fixed-top shadow">
     <div class="container">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">
 			<?php if ( has_custom_logo() ) : ?>

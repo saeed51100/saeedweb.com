@@ -1,4 +1,4 @@
-<footer class="container footer mt-auto py-3 sticky-top bg-danger">
+<footer class="footer mt-auto py-3 sticky-top bg-danger">
 	<div class="container">
 		<span class="text-muted">Place sticky footer content here.</span>
 	</div>
