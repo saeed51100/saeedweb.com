@@ -11,6 +11,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
 
 
+    <!-- https://developer.wordpress.org/themes/basics/including-css-javascript/ -->
     <!-- https://www.webstand.ir/add-css-and-js-file-to-theme-with-wp-enqueue/ -->
     <!--    saeed: replace link below css & js -->
 
