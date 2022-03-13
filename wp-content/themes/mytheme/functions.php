@@ -1,17 +1,5 @@
 <?php
 
-//Including CSS & JavaScript.
-//https://developer.wordpress.org/themes/basics/including-css-javascript/
-function add_theme_scripts()
-{
-    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.rtl.css', array(), '1.1', 'all');
-    wp_enqueue_style('style', get_stylesheet_uri());
-    wp_enqueue_script('script', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array('jquery'), 1.1, true);
-}
-
-add_action('wp_enqueue_scripts', 'add_theme_scripts');
-
-
 // Theme Support
 function business_theme_setup()
 {
@@ -30,6 +18,19 @@ function business_theme_setup()
 }
 
 add_action('after_setup_theme', 'business_theme_setup');
+
+
+//Including CSS & JavaScript.
+//https://developer.wordpress.org/themes/basics/including-css-javascript/
+function add_theme_scripts()
+{
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.rtl.css', array(), '1.1', 'all');
+    wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_script('script', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array('jquery'), 1.1, true);
+}
+
+add_action('wp_enqueue_scripts', 'add_theme_scripts');
+
 
 function example_function()
 {
