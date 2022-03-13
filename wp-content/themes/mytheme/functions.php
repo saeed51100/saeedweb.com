@@ -1,104 +1,131 @@
 <?php
+
+//Including CSS & JavaScript.
+//https://developer.wordpress.org/themes/basics/including-css-javascript/
+function add_theme_scripts()
+{
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.rtl.css', array(), '1.1', 'all');
+    wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_script('script', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array('jquery'), 1.1, true);
+}
+
+add_action('wp_enqueue_scripts', 'add_theme_scripts');
+
+
 // Theme Support
-function business_theme_setup() {
-	// Logo Support
-	add_theme_support( 'custom-logo' );
+function business_theme_setup()
+{
+    // Logo Support
+    add_theme_support('custom-logo');
 
 //	Post Thumbnails
-	add_theme_support( 'post-thumbnails' );
+    add_theme_support('post-thumbnails');
 
 //	https://github.com/wp-bootstrap/wp-bootstrap-navwalker
-	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu' )
-	) );
+    register_nav_menus(array(
+        'primary' => __('Primary Menu')
+    ));
 }
 
-add_action( 'after_setup_theme', 'business_theme_setup' );
+add_action('after_setup_theme', 'business_theme_setup');
 
-function example_function() {
-	if ( is_admin_bar_showing() ) {
-		?>
+function example_function()
+{
+    if (is_admin_bar_showing()) {
+        ?>
         <style>
-            @media screen and (max-width: 2000px) { header { margin-top: 32px !important } }
-            @media screen and (max-width: 782px) { header { margin-top: 46px !important } }
+            @media screen and (max-width: 2000px) {
+                header {
+                    margin-top: 32px !important
+                }
+            }
+
+            @media screen and (max-width: 782px) {
+                header {
+                    margin-top: 46px !important
+                }
+            }
         </style>
-		<?php
-	}
+        <?php
+    }
 }
 
-add_action( 'init', 'example_function' );
+add_action('init', 'example_function');
 
-function my_excerpt_length( $length ) {
-	return 60;
+function my_excerpt_length($length)
+{
+    return 60;
 }
 
-add_filter( 'excerpt_length', 'my_excerpt_length' );
+add_filter('excerpt_length', 'my_excerpt_length');
 
 // Widget Locations
-function init_widgets( $id ) {
-	register_sidebar( array(
-		'name'          => 'Sidebar',
-		'id'            => 'sidebar',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => ''
-	) );
+function init_widgets($id)
+{
+    register_sidebar(array(
+        'name' => 'Sidebar',
+        'id' => 'sidebar',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => ''
+    ));
 
 }
 
-add_action( 'widgets_init', 'init_widgets' );
+add_action('widgets_init', 'init_widgets');
 
 // bootstrap pagination
 // https://fellowtuts.com/bootstrap/wordpress-pagination-bootstrap-4-style/
 // saeed: This function modified by saeed. refer to source link above if you need.
-function fellowtuts_wpbs_pagination( $pages = '', $range = 2 ) {
-	$showitems = ( $range * 2 ) + 1;
-	global $paged;
-	if ( empty( $paged ) ) {
-		$paged = 1;
-	}
-	if ( $pages == '' ) {
-		global $wp_query;
-		$pages = $wp_query->max_num_pages;
+function fellowtuts_wpbs_pagination($pages = '', $range = 2)
+{
+    $showitems = ($range * 2) + 1;
+    global $paged;
+    if (empty($paged)) {
+        $paged = 1;
+    }
+    if ($pages == '') {
+        global $wp_query;
+        $pages = $wp_query->max_num_pages;
 
-		if ( ! $pages ) {
-			$pages = 1;
-		}
-	}
+        if (!$pages) {
+            $pages = 1;
+        }
+    }
 
-	if ( 1 != $pages ) {
+    if (1 != $pages) {
 
-		echo '<ul class="pagination justify-content-center ft-wpbs">';
+        echo '<ul class="pagination justify-content-center ft-wpbs">';
 
 //		echo '<li class="page-item disabled hidden-md-down d-none d-lg-block"><span class="page-link">Page ' . $paged . ' of ' . $pages . '</span></li>';
 
-		if ( $paged > 2 && $paged > $range + 1 && $showitems < $pages ) {
-			echo '<li class="page-item"><a class="page-link" href="' . get_pagenum_link( 1 ) . '" aria-label="First Page">&laquo;</a></li>';
-		}
+        if ($paged > 2 && $paged > $range + 1 && $showitems < $pages) {
+            echo '<li class="page-item"><a class="page-link" href="' . get_pagenum_link(1) . '" aria-label="First Page">&laquo;</a></li>';
+        }
 
-		if ( $paged > 1 && $showitems < $pages ) {
-			echo '<li class="page-item"><a class="page-link" href="' . get_pagenum_link( $paged - 1 ) . '" aria-label="Previous Page">&lsaquo;</a></li>';
-		}
+        if ($paged > 1 && $showitems < $pages) {
+            echo '<li class="page-item"><a class="page-link" href="' . get_pagenum_link($paged - 1) . '" aria-label="Previous Page">&lsaquo;</a></li>';
+        }
 
-		for ( $i = 1; $i <= $pages; $i ++ ) {
-			if ( 1 != $pages && ( ! ( $i >= $paged + $range + 1 || $i <= $paged - $range - 1 ) || $pages <= $showitems ) ) {
-				echo ( $paged == $i ) ? '<li class="page-item active"><span class="page-link"><span class="sr-only"></span>' . $i . '</span></li>' : '<li class="page-item"><a class="page-link" href="' . get_pagenum_link( $i ) . '">' . $i . '</a></li>';
-			}
-		}
+        for ($i = 1; $i <= $pages; $i++) {
+            if (1 != $pages && (!($i >= $paged + $range + 1 || $i <= $paged - $range - 1) || $pages <= $showitems)) {
+                echo ($paged == $i) ? '<li class="page-item active"><span class="page-link"><span class="sr-only"></span>' . $i . '</span></li>' : '<li class="page-item"><a class="page-link" href="' . get_pagenum_link($i) . '">' . $i . '</a></li>';
+            }
+        }
 
-		if ( $paged < $pages && $showitems < $pages ) {
-			echo '<li class="page-item"><a class="page-link" href="' . get_pagenum_link( $paged + 1 ) . '" aria-label="Next Page">&rsaquo;</a></li>';
-		}
+        if ($paged < $pages && $showitems < $pages) {
+            echo '<li class="page-item"><a class="page-link" href="' . get_pagenum_link($paged + 1) . '" aria-label="Next Page">&rsaquo;</a></li>';
+        }
 
-		if ( $paged < $pages - 1 && $paged + $range - 1 < $pages && $showitems < $pages ) {
-			echo '<li class="page-item"><a class="page-link" href="' . get_pagenum_link( $pages ) . '" aria-label="Last Page">&raquo;</a></li>';
-		}
+        if ($paged < $pages - 1 && $paged + $range - 1 < $pages && $showitems < $pages) {
+            echo '<li class="page-item"><a class="page-link" href="' . get_pagenum_link($pages) . '" aria-label="Last Page">&raquo;</a></li>';
+        }
 
-		echo '</ul>';
-		echo '</nav>';
-		echo '<div class="pagination-info mb-5 text-center">[ <span class="text-muted">Page</span> ' . $paged . ' <span class="text-muted">of</span> ' . $pages . ' ]</div>';
-	}
+        echo '</ul>';
+        echo '</nav>';
+        echo '<div class="pagination-info mb-5 text-center">[ <span class="text-muted">Page</span> ' . $paged . ' <span class="text-muted">of</span> ' . $pages . ' ]</div>';
+    }
 }
