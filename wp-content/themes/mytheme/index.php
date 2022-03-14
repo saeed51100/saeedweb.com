@@ -15,6 +15,7 @@
                     <div class="bg-light m-3 rounded shadow p-3">
                         <article class="d-flex post">
                             <div class="container col-md-9">
+
                                 <ul class="meta">
                                     <li>By
                                         <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
@@ -39,19 +40,18 @@
                                         ?>
                                     </li>
                                 </ul>
-
                                 <a href="<?php the_permalink(); ?>">
                                     <h3><?php the_title(); ?></h3>
                                 </a>
-
                                 <?php the_excerpt(); ?>
+
                             </div>
+
                             <div class="container d-flex flex-column-reverse col-md-3">
 
                                 <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-block">
                                     <?php echo __('Read More'); ?>
                                 </a>
-
                                 <div class="post-thumbnail">
                                     <?php if (has_post_thumbnail()): ?>
                                         <?php the_post_thumbnail(); ?>
