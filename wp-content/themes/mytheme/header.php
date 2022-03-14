@@ -11,7 +11,6 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
 
 
-
     <style>
 
 
@@ -33,15 +32,18 @@
             <?php endif; ?>
         </a>
 
-        <button class="navbar-toggler position-absolute d-md-none collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#sidebarMenu"
-                aria-controls="sidebarMenu"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <?php if ( ! is_page('about')): ?>
+            <button class="navbar-toggler position-absolute d-md-none collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#sidebarMenu"
+                    aria-controls="sidebarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <?php endif ?>
+
         <!--
         saeed: search form without widget.
         <div class="m-2">
@@ -72,7 +74,7 @@
                     'container' => 'div',
                     'container_class' => 'collapse navbar-collapse',
                     'container_id' => 'bs-example-navbar-collapse-1',
-//				'menu_class'      => 'navbar-nav mr-auto',
+                    //				'menu_class'      => 'navbar-nav mr-auto',
                     'menu_class' => 'nav nav-pills pull-right',
                     'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
                     'walker' => new WP_Bootstrap_Navwalker(),

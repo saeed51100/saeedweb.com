@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container">
-    <div class="row" style="margin-top: 58px">
+    <div class="row" style="margin-top: 38px">
 
         <?php get_template_part('sidebarloop'); ?>
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 <!--bg-light--> bg-warning">
