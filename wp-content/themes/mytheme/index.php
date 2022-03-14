@@ -13,7 +13,7 @@
                      http://jsfiddle.net/4dgaurav/hF72b/1/
                     -->
                     <div class="bg-light m-3 rounded shadow p-3">
-                        <article class="d-flex post">
+                        <article class="row post">
                             <div class="container col-md-9">
 
                                 <ul class="meta">
@@ -47,16 +47,19 @@
 
                             </div>
 
-                            <div class="container d-flex flex-column-reverse col-md-3">
+                            <div class="container col-md-3" style="position: relative">
 
-                                <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-block">
-                                    <?php echo __('Read More'); ?>
-                                </a>
                                 <div class="post-thumbnail">
                                     <?php if (has_post_thumbnail()): ?>
                                         <?php the_post_thumbnail(); ?>
                                     <?php endif; ?>
                                 </div>
+                                <div style="position:absolute; bottom: 0 ">
+                                    <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-block">
+                                        <?php echo __('Read More'); ?>
+                                    </a>
+                                </div>
+
 
                             </div>
                         </article>
