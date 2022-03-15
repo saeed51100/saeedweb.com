@@ -4,7 +4,7 @@
         <div class="row" style="margin-top: 38px">
 
             <?php get_template_part('sidebarloop'); ?>
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 <!--bg-light--> bg-warning">
+            <main class="col-md-9 col-lg-9 <!--bg-light--> bg-warning">
                 <div class="container">
 
                     <?php if (have_posts()) : ?>
