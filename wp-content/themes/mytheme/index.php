@@ -3,7 +3,7 @@
     <div class="row" style="margin-top: 38px">
 
         <?php get_template_part('sidebarloop'); ?>
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 <!--bg-light--> bg-warning">
+        <main class="col-md-8 col-lg-9  <!--bg-light--> bg-warning">
 
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
@@ -43,15 +43,15 @@
 
                             </div>
 
-                            <div class="container col-md-3" style="position: relative;">
+                            <div class="container col-md-3 d-md-block sidebar collapse" style="position: relative;">
 
-                                <div class="post-thumbnail">
+                                <div class="post-thumbnail shadow">
                                     <?php if (has_post_thumbnail()): ?>
                                         <?php the_post_thumbnail(); ?>
                                     <?php endif; ?>
                                 </div>
                                 <div style="position:absolute; left: 0; right: 0; bottom: 0; padding: inherit">
-                                    <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-block">
+                                    <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-block shadow">
                                         <?php echo __('Read More'); ?>
                                     </a>
                                 </div>
