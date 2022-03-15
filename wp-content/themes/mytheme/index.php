@@ -7,11 +7,7 @@
 
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
-                    <!--
-                    saeed:  keep two side-by-side div elements
-                    with same height using d-flex.
-                     http://jsfiddle.net/4dgaurav/hF72b/1/
-                    -->
+
                     <div class="bg-light m-3 rounded shadow p-3">
                         <article class="row post">
                             <div class="container col-md-9">
@@ -49,7 +45,7 @@
 
                             <div class="container col-md-3" style="position: relative;">
 
-                                <div class="post-thumbnail" >
+                                <div class="post-thumbnail">
                                     <?php if (has_post_thumbnail()): ?>
                                         <?php the_post_thumbnail(); ?>
                                     <?php endif; ?>
