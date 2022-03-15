@@ -47,14 +47,14 @@
 
                             </div>
 
-                            <div class="container col-md-3" style="position: relative">
+                            <div class="container col-md-3" style="position: relative;">
 
-                                <div class="post-thumbnail">
+                                <div class="post-thumbnail" >
                                     <?php if (has_post_thumbnail()): ?>
                                         <?php the_post_thumbnail(); ?>
                                     <?php endif; ?>
                                 </div>
-                                <div style="position:absolute; bottom: 0 ">
+                                <div style="position:absolute; left: 0; right: 0; bottom: 0; padding: inherit">
                                     <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-block">
                                         <?php echo __('Read More'); ?>
                                     </a>
