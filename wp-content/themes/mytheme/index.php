@@ -3,7 +3,7 @@
     <div class="row" style="margin-top: 38px">
 
         <?php get_template_part('sidebarloop'); ?>
-        <main class="col-md-8 col-lg-9  <!--bg-light--> bg-warning">
+        <main class="col-md-9 col-lg-10  <!--bg-light--> bg-warning">
 
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
