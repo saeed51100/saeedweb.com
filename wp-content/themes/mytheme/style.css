@@ -44,11 +44,11 @@ main {
     display: flex;
     /*flex-wrap: nowrap;*/ /* commented by saeed*/
     flex-wrap: wrap;
-    height: 100vh;
-    height:
-            -webkit-fill-available;
+    /*height: 100vh;*/     /*commented by saeed*/
+    /*height:*/
+    /*        -webkit-fill-available;*/
     /*max-height: 100vh;*/ /* commented by saeed*/
-    max-height: 500vh;
+    /*max-height: 500vh;*/ /* commented by saeed*/
     overflow-x: auto;
     overflow-y: hidden;
 }
