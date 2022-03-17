@@ -11,7 +11,7 @@
 
                     <div class="bg-light m-3 rounded shadow p-3">
                         <article class="row post">
-                            <div class="container col-md-9">
+                            <div class="container col-md-9 py-2 px-4">
 
                                 <ul class="meta">
                                     <li>By
@@ -44,7 +44,7 @@
 
                             </div>
 
-                            <div class="container col-md-3 d-md-block sidebar collapse" style="position: relative;">
+                            <div class="container col-md-3 d-md-block sidebar collapse p-2" style="position: relative;">
 
                                 <div class="post-thumbnail shadow">
                                     <?php if (has_post_thumbnail()): ?>
