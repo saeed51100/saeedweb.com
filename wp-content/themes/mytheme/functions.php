@@ -24,7 +24,6 @@ add_action('after_setup_theme', 'business_theme_setup');
 //https://developer.wordpress.org/themes/basics/including-css-javascript/
 //https://www.codexico.com/bootstrap-font-awesome-jquery-popperjs-wordpress/
 //https://https://getbootstrap.com/docs/5.1/getting-started/rtl/
-//https://www.bootstrapcdn.com/fontawesome/
 //https://getbootstrap.com/docs/5.1/getting-started/introduction/
 function add_theme_scripts()
 {
