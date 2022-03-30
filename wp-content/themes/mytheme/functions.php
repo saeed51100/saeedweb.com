@@ -22,10 +22,15 @@ add_action('after_setup_theme', 'business_theme_setup');
 
 //Including CSS & JavaScript.
 //https://developer.wordpress.org/themes/basics/including-css-javascript/
+//https://www.codexico.com/bootstrap-font-awesome-jquery-popperjs-wordpress/
+//https://getbootstrap.com/docs/5.0/getting-started/rtl/
+//https://www.bootstrapcdn.com/fontawesome/
 function add_theme_scripts()
 {
-    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.rtl.css', array(), '1.1', 'all');
+    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css', false, NULL, 'all');
+    wp_enqueue_style( 'fontawesome-free', 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css' );
     wp_enqueue_style('style', get_stylesheet_uri());
+
     wp_enqueue_script('script', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array('jquery'), 1.1, true);
 }
 
