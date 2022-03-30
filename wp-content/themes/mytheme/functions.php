@@ -31,7 +31,7 @@ function add_theme_scripts()
     wp_enqueue_style( 'fontawesome-free', 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css' );
     wp_enqueue_style('style', get_stylesheet_uri());
 
-    wp_enqueue_script('script', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array('jquery'), 1.1, true);
+    wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array('jquery'), true);
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
