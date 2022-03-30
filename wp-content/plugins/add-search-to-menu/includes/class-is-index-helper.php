@@ -144,6 +144,11 @@ class IS_Index_Helper {
 	 * @return string The post content with the rendered content added.
 	 */
 	public function block_rendering( $content ) {
+
+		if( ! function_exists( 'parse_blocks' ) ) {
+			return $content;
+		}
+
 		$blocks = parse_blocks( $content );
 		$output = '';
 

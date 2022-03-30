@@ -5,7 +5,7 @@ Tags: search, woocommerce search, image search, ajax search, search shortcode, l
 Requires at least: 3.9
 Tested up to: 5.9
 Requires PHP: 5.2.4
-Stable tag: 5.4.4
+Stable tag: 5.4.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -197,6 +197,9 @@ Yes we do. We try our best to help free users with customisation requests and we
 
 == Changelog ==
 
+= 5.4.5 =
+* Fixed - Call to undefined function parse_blocks
+
 = 5.4.4 =
 * Updated - Freemius SDK
 * Fixed - Security fix
@@ -236,13 +239,3 @@ Yes we do. We try our best to help free users with customisation requests and we
 * Added - Faster search with inverted index-based search engine.
 * Added - Index and search  shortcode contents.
 * Added - Index and search TablePress shortcode contents.
-
-= 4.8.2 =
-* Fixed - Plugin template file is-ajax-results.php was not overriding.
-
-= 4.8.1 =
-* Fixed - Autocomplete off was not working.
-
-= 4.8 =
-* Fixed - Error occurred due to inclusion of non-existent file.
-* Fixed - Plugin admin options not working.

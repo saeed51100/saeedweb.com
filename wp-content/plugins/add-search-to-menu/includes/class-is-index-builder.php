@@ -205,8 +205,8 @@ class IS_Index_Builder {
 		$post      = $this->post;
 		$post_type = $post->post_type ? $post->post_type : '';
 
-		if ( 'revision' == $post_type ) {
-			$parent    = get_post_parent( $post->ID );
+		if ( 'revision' == $post_type && ! empty( $post->post_parent ) ) {
+			$parent    = get_post( $post->post_parent );
 			$post_type = $parent->post_type ? $parent->post_type : '';
 		}
 
