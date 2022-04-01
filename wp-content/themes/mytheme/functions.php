@@ -32,6 +32,10 @@ function add_theme_scripts()
     wp_enqueue_style('style', get_stylesheet_uri());
 
     wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array('jquery'), true);
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
