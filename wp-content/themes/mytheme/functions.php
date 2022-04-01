@@ -9,8 +9,7 @@ function business_theme_setup()
 //	Post Thumbnails
     add_theme_support('post-thumbnails');
 
-//	https://github.com/wp-bootstrap/wp-bootstrap-navwalker
-    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
 
     register_nav_menus(array(
         'primary' => __('Primary Menu')
@@ -18,6 +17,15 @@ function business_theme_setup()
 }
 
 add_action('after_setup_theme', 'business_theme_setup');
+
+
+/**
+ * REQUIRED FILES
+ * Include required files.
+ */
+//	https://github.com/wp-bootstrap/wp-bootstrap-navwalker
+require_once get_template_directory() . '/classes/class-wp-bootstrap-navwalker.php';
+
 
 
 //Including CSS & JavaScript.
