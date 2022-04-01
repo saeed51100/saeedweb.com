@@ -88,11 +88,3 @@
         </nav>
     </div>
 </header>
-<div class="container">
-    <br>
-    <br>
-    <br>
-    123456789
-    <i class="fas fa-search"></i>
-    <i class="fas fa-phone"></i>
-</div>
