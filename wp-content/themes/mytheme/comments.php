@@ -1,5 +1,7 @@
 <div class="comments">
-	<h2>Comments</h2>
+	<h2>
+       نظرات
+    </h2>
 	<?php $args = array(
 		'walker'            => null,
 		'max_depth'         => '',

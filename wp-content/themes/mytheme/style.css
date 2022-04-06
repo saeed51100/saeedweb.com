@@ -164,6 +164,7 @@ article.post img {
     height: auto;
 }
 
+/* Comments ------------------------------------------------------------------------  */
 
 .comments {
     border: 1px #ccc solid;
@@ -173,8 +174,8 @@ article.post img {
 }
 
 .comments h2, .comments h3 {
-    background: #0faf97;
-    color: #fff;
+    /*background: #0faf97;*/
+    /*color: #fff;*/
     padding: 5px;
 }
 
@@ -185,14 +186,14 @@ article.post img {
 }
 
 .comment-meta {
-    background: #333;
-    color: #fff;
+    /*background: #333;*/
+    /*color: #fff;*/
     padding: 10px;
     overflow: auto;
 }
 
 .comment-meta img {
-    float: left;
+    /*float: left;*/
     margin-right: 10px;
 }
 
@@ -215,6 +216,11 @@ article.post img {
     margin-bottom: 20px;
 }
 
+.comment-form-comment {
+    max-width: 500px;
+}
+
+/* ------------------------------------------------------------------------------------ */
 .list-group-item {
     background-color: #d2f4ea;
 }
