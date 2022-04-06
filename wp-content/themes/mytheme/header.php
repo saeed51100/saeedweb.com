@@ -88,3 +88,8 @@
         </nav>
     </div>
 </header>
+
+<!--    How to prevent anchor links from scrolling behind a sticky header with one line of CSS-->
+<!-- https://gomakethings.com/how-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header-with-one-line-of-css/ -->
+<article id="my-header" style="scroll-margin-top: 1em;">
+</article>
