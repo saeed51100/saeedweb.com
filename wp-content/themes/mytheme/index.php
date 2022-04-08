@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row" style="margin-top: 38px">
 
-		    <?php get_template_part( 'sidebarloop' ); ?>
+		    <?php get_template_part( 'template-parts/sidebarloop' ); ?>
             <main class="col-md-9 col-lg-9 <!--bg-light--> <!--bg-light-->"
 
             >
