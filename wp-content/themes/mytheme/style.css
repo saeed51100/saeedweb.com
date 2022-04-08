@@ -360,3 +360,7 @@ a.to-the-top {
     font-weight: 600;
     margin: 0;
 }
+
+/* wpdiscuz ------------------------------------------------------- */
+
+#wpdcom.wpd-layout-1 .wpd-comment .wpd-comment-left{text-align: right;}
