@@ -1,4 +1,5 @@
-<nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block bg-success sidebar collapse">
+<nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block <!--bg-light--> sidebar collapse"
+style="background-color: #f3edde">
 
 
     <!--
