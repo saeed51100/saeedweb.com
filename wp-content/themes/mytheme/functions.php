@@ -36,7 +36,8 @@ require_once get_template_directory() . '/classes/class-wp-bootstrap-navwalker.p
 function add_theme_scripts()
 {
     wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css', false, NULL, 'all');
-    wp_enqueue_style( 'fontawesome-free', 'https://use.fontawesome.com/releases/v5.15.4/css/all.css' );
+//    wp_enqueue_style( 'fontawesome-free', 'https://use.fontawesome.com/releases/v5.15.4/css/all.css' );
+    wp_enqueue_style( 'bootstrap-icon', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css' );
     wp_enqueue_style('style', get_stylesheet_uri());
 
     wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array('jquery'), true);
