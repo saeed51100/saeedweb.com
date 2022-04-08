@@ -69,7 +69,7 @@
 										foreach ( $tags as $tag ) :
 											$tag_link = get_tag_link( $tag->term_id );
 											?>
-                                            <a href="<?php echo $tag_link; ?>" >
+                                            <a href="<?php echo $tag_link; ?>">
 												<?php echo $tag->name ?>
                                             </a>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -83,24 +83,11 @@
 									?>
                                     <hr/>
 
-
-                                    <!--
-								Output comments wrapper if it's a post, or if comments are open,
-								or if there's a comment number – and check for password.
-								-->
 									<?php
 
-									if (
-										//	( is_singular() || is_page() ) &&
-										( comments_open() || get_comments_number() )
-										&& ! post_password_required()
-									) {
-										?>
-                                        <div class="bg-light rounded shadow">
-											<?php comments_template(); ?>
-                                        </div>
-
-										<?php
+									// If comments are open or there is at least one comment, load up the comment template.
+									if ( comments_open() || get_comments_number() ) {
+										comments_template();
 									}
 									?>
 
