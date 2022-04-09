@@ -12,7 +12,7 @@
  */
 
 ?>
-<footer id="site-footer">
+<footer id="site-footer" style="direction: ltr; margin-inline: 200px">
 
     <div class="container section-inner">
 
@@ -44,7 +44,6 @@
         </a><!-- .to-the-top -->
 
     </div><!-- .section-inner -->
-
 </footer><!-- #site-footer -->
 
 <?php wp_footer(); ?>
