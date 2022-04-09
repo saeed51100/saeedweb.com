@@ -5,7 +5,7 @@
         <div class="row" style="margin-top: 38px">
 
 		    <?php get_template_part( 'template-parts/sidebarloop' ); ?>
-		    <?php get_template_part( 'template-parts/content' ); ?>
+		    <?php get_template_part( 'template-parts/list-posts' ); ?>
 
         </div>
     </div>
