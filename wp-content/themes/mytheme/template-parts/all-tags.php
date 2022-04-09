@@ -1,7 +1,7 @@
 <div class="scrollarea mx-2 bg-light rounded shadow">
     <div class="side-widget m-3">
         <h3>برچسب ها</h3>
-        <hr>
+        <hr style="height: 3px">
     </div>
     <div class="m-2">
 		<?php
