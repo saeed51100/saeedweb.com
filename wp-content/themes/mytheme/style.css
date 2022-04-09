@@ -365,3 +365,11 @@ a.to-the-top {
 /* wpdiscuz ------------------------------------------------------- */
 
 #wpdcom.wpd-layout-1 .wpd-comment .wpd-comment-left{text-align: right;}
+
+/* Widgete styles copyed from buisines theme ------------------------------ */
+
+.side-widget h3{
+    border-right:5px #0faf97 solid;
+    padding-right:10px;
+    margin-bottom:15px;
+}
