@@ -1,5 +1,5 @@
 <div class="comments mx-2 bg-light rounded shadow">
-	<h2>Tags</h2>
+	<h2>برچسب ها</h2>
 	<?php
 	$tags = get_tags();
 	foreach ( $tags as $tag ) :
