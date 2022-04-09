@@ -373,3 +373,9 @@ a.to-the-top {
     padding-right:10px;
     margin-bottom:15px;
 }
+
+
+/* add border active to home button ---------------------------------------------*/
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+    border: 1px solid rgba(0,0,0,.125);
+}
