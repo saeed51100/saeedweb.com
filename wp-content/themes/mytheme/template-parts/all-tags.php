@@ -10,7 +10,7 @@
 			$tag_link = get_tag_link( $tag->term_id );
 			?>
             <div style="display: inline;">
-                <button class="btn btn-outline-secondary my-1 p-1">
+                <button class="btn btn-outline-secondary my-1 py-0">
                     <a href="<?php echo $tag_link; ?>">
 						<?php echo $tag->name ?>
                     </a>
