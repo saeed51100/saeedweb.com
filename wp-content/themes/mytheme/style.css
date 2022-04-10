@@ -336,7 +336,28 @@ a.to-the-top {
 
 #site-footer {
     font-size: 1.6rem;
-    padding: 4.3rem 0;
+    padding: 2rem 15rem;
+}
+
+@media screen and (min-width: 1200px) {
+    #site-footer {
+        font-size: 1.6rem;
+        margin: 2rem 10rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #site-footer {
+        font-size: 1.6rem;
+        margin: 2rem 10rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #site-footer {
+        font-size: 1.6rem;
+        margin: 2rem 3rem;
+    }
 }
 
 
