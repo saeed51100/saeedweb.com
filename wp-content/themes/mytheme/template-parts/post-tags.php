@@ -6,7 +6,7 @@ if ( has_tag() ) {
 		$tag_link = get_tag_link( $tag->term_id );
 		?>
         <div style="display: inline;">
-            <button class="btn my-1 p-1">
+            <button class="btn btn-outline-secondary my-1 p-1">
                 <a href="<?php echo $tag_link; ?>">
 					<?php echo $tag->name ?>
                 </a>
