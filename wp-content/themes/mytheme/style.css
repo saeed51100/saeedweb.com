@@ -402,3 +402,16 @@ a.to-the-top {
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     border: 1px solid rgba(0, 0, 0, .125);
 }
+
+/* Fonts ---------------------------------------------------------------------------- */
+@font-face {
+    font-family: 'BYekan';
+    src: url('fonts/BYekan.eot?#') format('eot'),
+    url('fonts/BYekan.woff') format('woff'),
+    url('fonts/BYekan.ttf') format('truetype');
+}
+
+/*https://stackoverflow.com/questions/31378655/css-font-family-property-ide-phpstorm-warning*/
+body{
+    font-family:BYekan,serif;
+}
