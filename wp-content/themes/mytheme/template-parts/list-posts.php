@@ -1,9 +1,9 @@
-<main class="col-md-9 col-lg-9 <!--bg-light--> <!--bg-light-->" >
+<main class="col-md-9 col-lg-9" >
 
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<div class="bg-light m-3 rounded shadow p-3">
+			<div class="m-3 p-3 bg-light rounded shadow ">
 				<article class="row post">
 					<div class="container col-md-9 py-2 px-4">
 

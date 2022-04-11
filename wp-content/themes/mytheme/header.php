@@ -22,7 +22,7 @@
 <!--<body>-->
 <body <?php body_class(); ?>>
 
-<header class="navbar navbar-expand-md navbar-dark bg-light fixed-top shadow">
+<header class="navbar navbar-expand-md navbar-dark fixed-top bg-light shadow">
     <div class="container">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">
 			<?php if ( has_custom_logo() ) : ?>
