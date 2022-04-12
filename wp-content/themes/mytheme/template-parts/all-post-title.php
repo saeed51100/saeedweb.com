@@ -3,10 +3,10 @@
 	https://stackoverflow.com/questions/39047664/how-to-display-all-posts-in-wordpress
 	-->
 
-<ul class="btn-toggle-nav list-unstyled scrollarea mx-2 bg-light rounded shadow">
+<ul class="btn-toggle-nav <!--list-unstyled--> scrollarea mx-2 bg-light rounded shadow">
     <div class="side-widget m-3" >
         <h3>عنوان پست</h3>
-        <hr>
+        <hr style="height: 3px">
     </div>
     <div class="m-2">
 	    <?php

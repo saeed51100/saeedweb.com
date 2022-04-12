@@ -1,7 +1,7 @@
 <div class="scrollarea mx-2 bg-light rounded shadow">
     <div class="side-widget m-3">
         <h3>برچسب ها</h3>
-        <hr>
+        <hr style="height: 3px">
     </div>
     <div class="m-2">
 		<?php
@@ -10,7 +10,7 @@
 			$tag_link = get_tag_link( $tag->term_id );
 			?>
             <div style="display: inline;">
-                <button class="btn my-1 p-1">
+                <button class="btn btn-outline-secondary my-1 py-0">
                     <a href="<?php echo $tag_link; ?>">
 						<?php echo $tag->name ?>
                     </a>
