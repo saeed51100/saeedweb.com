@@ -1,4 +1,4 @@
-<ul class="meta">
+<ul id="meta" class="meta">
 	<li>By
 		<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 			<?php the_author(); ?>

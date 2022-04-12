@@ -14,7 +14,7 @@
 
                                 <div class="bg-light p-3 my-3 rounded shadow">
                                     <section class="title-bar rounded-top">
-                                        <div class="container">
+                                        <div class="container" style="padding-top: 15px">
                                             <h1><?php the_title(); ?></h1>
                                         </div>
                                     </section>

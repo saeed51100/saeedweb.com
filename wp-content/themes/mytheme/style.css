@@ -412,6 +412,16 @@ a.to-the-top {
 }
 
 /*https://stackoverflow.com/questions/31378655/css-font-family-property-ide-phpstorm-warning*/
-body{
-    font-family:BYekan,serif;
+main {
+    font-family: BYekan, serif;
+}
+
+#meta {
+    font-family: 'arial', serif;
+}
+/* --------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    #sidebarMenu {
+        width: 70%;
+    }
 }
