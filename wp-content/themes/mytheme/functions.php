@@ -75,7 +75,7 @@ add_action('init', 'example_function');
 
 function my_excerpt_length($length)
 {
-    return 60;
+    return 40;
 }
 
 add_filter('excerpt_length', 'my_excerpt_length');
