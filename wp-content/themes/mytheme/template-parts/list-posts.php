@@ -39,7 +39,7 @@
         <!--
 		https://fellowtuts.com/bootstrap/wordpress-pagination-bootstrap-4-style/
 		-->
-        <div class="container justify-content-center pull-left" style="direction: ltr">
+        <div id="pagination" class="container justify-content-center pull-left" style="direction: ltr">
 			<?php
 			if ( function_exists( "fellowtuts_wpbs_pagination" ) ) {
 				fellowtuts_wpbs_pagination();

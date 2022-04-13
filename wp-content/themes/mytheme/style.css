@@ -416,7 +416,7 @@ main {
     font-family: BYekan, serif;
 }
 
-#meta {
+#meta, #pagination {
     font-family: 'arial', serif;
 }
 /* --------------------------------------------------------------------------------------------*/
@@ -424,4 +424,19 @@ main {
     #sidebarMenu {
         width: 70%;
     }
+}
+
+/* Pagination -------------------------------------------------------------------------------*/
+
+.page-item.active .page-link {
+    background-color: #0faf97;
+    border-color: #0faf97;
+}
+/* -------------------------------------------------------------------------------------- */
+.nav-link{
+    color: #6e6f75;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #28282b;
 }
