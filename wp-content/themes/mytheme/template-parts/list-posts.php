@@ -24,7 +24,7 @@
                         </div>
                         <div style="position:absolute; left: 0; right: 0; bottom: 0; padding: inherit">
                             <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-block shadow">
-								<?php echo __( 'Read More' ); ?>
+								<?php echo __( 'ادامه مطلب' ); ?>
                             </a>
                         </div>
 
