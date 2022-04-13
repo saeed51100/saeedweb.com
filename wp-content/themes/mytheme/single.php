@@ -14,7 +14,7 @@
 
                                 <div class="bg-light p-3 my-3 rounded shadow">
                                     <section class="title-bar rounded-top">
-                                        <div class="container" style="padding-top: 15px">
+                                        <div id="title" class="container" style="padding-top: 15px">
                                             <h1><?php the_title(); ?></h1>
                                         </div>
                                     </section>
@@ -28,7 +28,10 @@
 													<?php endif; ?>
                                                 </div>
 	                                            <?php get_template_part( 'template-parts/meta' ); ?>
-												<?php the_content(); ?>
+                                                <div id="content">
+	                                                <?php the_content(); ?>
+                                                </div>
+
 
                                             </article>
                                             <div class="clr"></div>

@@ -3,7 +3,7 @@
 
 	<?php get_template_part( 'template-parts/all-post-title' ); ?>
 
-	<?php get_template_part( 'template-parts/all-tags' ); ?>
+<!--	--><?php //get_template_part( 'template-parts/all-tags' ); ?>
 
 
 

@@ -412,13 +412,10 @@ a.to-the-top {
 }
 
 /*https://stackoverflow.com/questions/31378655/css-font-family-property-ide-phpstorm-warning*/
-main {
+#sidebarMenu, #title, #content, #page {
     font-family: BYekan, serif;
 }
 
-#meta, #pagination {
-    font-family: 'arial', serif;
-}
 /* --------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 767px) {
     #sidebarMenu {
@@ -438,5 +435,13 @@ main {
 }
 
 .nav-link:focus, .nav-link:hover {
+    color: #28282b;
+}
+/* --------------------------------------------------------------------------------------------*/
+.link-dark{
+    color: #6e6f75;
+}
+
+.link-dark:focus, .link-dark:hover {
     color: #28282b;
 }
