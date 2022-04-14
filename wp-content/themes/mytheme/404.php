@@ -5,7 +5,9 @@
         <div class="row" style="margin-top: 38px">
 
 			<?php get_sidebar(); ?>
+
             <main class="col-md-9 col-lg-9">
+                <h1 class="st404">404</h1>
                 <h1 class="st404">صفحه مورد نظر پیدا نشد</h1>
             </main>
 
