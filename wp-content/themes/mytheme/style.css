@@ -445,3 +445,9 @@ a.to-the-top {
 .link-dark:focus, .link-dark:hover {
     color: #28282b;
 }
+/* 404 style ------------------------------------------------------*/
+.st404{
+    margin-top: 10rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
