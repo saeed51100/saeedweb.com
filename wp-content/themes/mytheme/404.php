@@ -6,13 +6,16 @@
 
 			<?php get_sidebar(); ?>
 
-            <main class="col-md-9 col-lg-9">
-                <h1 class="st404">404</h1>
-                <h1 class="st404">صفحه مورد نظر پیدا نشد</h1>
+            <main class="d-block col-md-9 col-lg-9">
+                <div class="st404">
+                    <h1 style="font-size: 100px">404</h1>
+                    <h1>صفحه مورد نظر پیدا نشد</h1>
+                </div>
             </main>
 
         </div>
     </div>
 
 </div>
+
 <?php get_footer(); ?>

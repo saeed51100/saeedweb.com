@@ -447,7 +447,6 @@ a.to-the-top {
 }
 /* 404 style ------------------------------------------------------*/
 .st404{
-    margin-top: 10rem !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    text-align: center;
+    margin-top: 10rem;
 }
