@@ -52,7 +52,9 @@ add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
 function example_function()
 {
-    if (is_admin_bar_showing()) {
+	$current_user = wp_get_current_user();
+
+	if ($current_user=='reza') {
         ?>
         <style>
             @media screen and (max-width: 2000px) {
